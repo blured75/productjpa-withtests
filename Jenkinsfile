@@ -18,8 +18,5 @@ node {
       stage('Results - Eureka Server') {
         archiveArtifacts 'target/*.jar'
       }
-      stage('Docker - Eureka Server') {
-        docker.build("cloudnativejava/eureka-server")
-      }
   }
 }
