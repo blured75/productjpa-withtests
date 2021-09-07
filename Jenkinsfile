@@ -19,6 +19,5 @@ node {
       stage('Docker - Eureka Server') {
         docker.build("cloudnativejava/eureka-server")
       }
-    }
   }
 }
