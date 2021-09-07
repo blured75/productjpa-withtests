@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://docker.for.mac.localhost:5432/product
+    username: dbuser
+    password: dbpass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none

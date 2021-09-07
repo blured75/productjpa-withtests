@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+
+  error:
+    include-message:spring:
+  application:
+    name: product
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka:8761/eureka/
+
+
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: '*'
+
+
+management:
+  health:
+    hazelcast:
+      enabled: false
+
+logging.level.org.hibernate.tool.hbm2ddl: DEBUG
+logging.level.org.hibernate.SQL: DEBUG
+logging.level.com.blured: DEBUG
+
+management.endpoints.web.exposure.include: '*'
+
+
+server.error.include-message: always
