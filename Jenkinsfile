@@ -7,6 +7,8 @@ node {
     // ** NOTE: This 'M3' Maven tool must be configured
     // **       in the global configuration.
     def mvnHome = tool name: 'maven-3', type: 'maven'
+
+
   }
   stage('Eureka Server') {
       stage('Build - Eureka Server') {
