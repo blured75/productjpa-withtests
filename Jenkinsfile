@@ -6,12 +6,11 @@ node {
     // Get the Maven tool.
     // ** NOTE: This 'M3' Maven tool must be configured
     // **       in the global configuration.
-    mvnHome = tool 'M3'
   }
   stage('Eureka Server') {
       stage('Build - Eureka Server') {
         // Run the maven build
-        sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
+        sh "mvn -Dmaven.test.failure.ignore clean package"
       }
       stage('Results - Eureka Server') {
         archiveArtifacts 'target/*.jar'
