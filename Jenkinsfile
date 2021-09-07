@@ -6,7 +6,7 @@ node {
     // Get the Maven tool.
     // ** NOTE: This 'M3' Maven tool must be configured
     // **       in the global configuration.
-    def mvnHome = tool name: 'maven-3', type: 'maven'
+    mvnHome = tool name: 'maven-3', type: 'maven'
 
 
   }
